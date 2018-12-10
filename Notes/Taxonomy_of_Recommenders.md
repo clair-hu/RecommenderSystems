@@ -113,7 +113,59 @@
  - Users
  - Items
  - Ratings
- - (Community)
+ - (Community) 
+![Models connection](Images/Capture.JPG "Models connections")
+
+----
+## Non-Personalized Summary Stats
+* **External Community** Data
+ - Best-seller; Most popular; Trending Hot
+* Summary of Community Ratings
+ - Best-liked
  
-Inline-style: 
-![Models connection](Capture.JPG)
+* Examples
+ - Billboard music rankings
+ - TripAdvisor hotel ratings
+![Models connection](Images/Capture1.JPG "Models connections for TripAdvisor hotel ratings")
+
+----
+## Content-Based Filtering
+* User Ratings * Item Attributes -> Model
+* Model applied to new items via **attributes**
+* Alternative: knowledge-based
+ - Item attributes from model of item space - Users navigate/browse that space
+
+* Examples
+ - Personalized news feeds
+ - Artist or Genre music feeds
+![Models connection](Images/Capture2.JPG "Models connections for movies")
+ 
+----
+## Personalized Collaborative Filtering
+* Use opinions of **others** to predict/recomment
+* User model - set of ratings
+* Item model - set of ratings
+* Common core: sparse matrix of ratings
+ - Fill in missing values (predict)
+ -Select promising cells (recommend)
+* Several different techniques
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
