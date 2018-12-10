@@ -147,23 +147,44 @@
 * Item model - set of ratings
 * Common core: sparse matrix of ratings
  - Fill in missing values (predict)
- -Select promising cells (recommend)
+ - Select promising cells (recommend)
 * Several different techniques
+![Models connection](Images/Capture3.JPG "Models connections for movies")
  
+> If the matrix is close to full, we don't need a recommer system. We know everybody's opinions about everything.
+> But in fact, we do not know everybody's opinions. For a given user, we might know 1%, 1/10 of 1%
  
+## Techniques
+### Collaborative Filtering Techiniques
+* User-user
+ - Select neighborhood of **similar-taste** people - Variant: select people you know/trust
+ - Use their opinions
+* Item-item
+ - Pre-compute similarity among items via ratings
+ - Use own ratings to triangulate for recommendations
+* Dimensionality reduction
+ - Intuition: taste yields a **lower-dimensionality matrix**
+ - Compress and use a **taste representation**
+![Models connection](Images/Capture4.JPG "Models connections for movies")
  
+> In dimensionality reduction, the whole matrix would get reduced into something smaller.
+> The math works out so that I don't know what those dimensions are, but they are optimal which can be pretty cool.
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+----
+## Evaluation
+To properly understand relative merits of each approach, we will spend significant time on evaluation
+* Accuracy of predictions
+* Usefulness of recommendations
+ - Correctness
+ - Non-obviousness
+ - Diversity
+* Computational performance
+
+## Other approaches
+* Interactive recommenders
+ - Critique-based, dialog-based
+* Hybrids of various techniques
+
  
  
  
