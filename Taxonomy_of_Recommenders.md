@@ -116,4 +116,4 @@
  - (Community)
  
 Inline-style: 
-![Models connection]("Capture.JPG")
+![Models connection](Capture.JPG)
