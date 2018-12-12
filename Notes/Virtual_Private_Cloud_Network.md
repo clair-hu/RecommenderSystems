@@ -15,3 +15,14 @@ So far, it has one subnet defined in GCP us-east1 region.
 Notice that it has two compute engine VMs attached to it.
 They are neighbors on the same subnet even though they are in different zones.
 You can use this capability to build solutions that are resilient but still have simple network layouts. 
+
+
+
+Question: True or false? In Google Cloud VPCs, subnets have regional scope.
+
+Answer: True - VPC subnets can span the zones that make up a region. This is beneficial because your solutions can incorporate fault tolerance without complicating your network topology.
+
+
+Question: True or false: If you increase the size of a subnet in a custom VPC network, the IP addresses of virtual machines already on that subnet might be affected.
+
+Anser: False - You can dynamically increase the size of a subnet in a custom network by expanding the range of IP addresses allocated to it. Doing that doesn’t affect already configured VMs.
